@@ -1,9 +1,9 @@
 FROM caioquirino/docker-cloudera-quickstart
 
-COPY * /tmp/context
+COPY * /tmp/context/
 
 WORKDIR /tmp/context
 
-RUN setup.sh
+RUN ./setup.sh
 
 WORKDIR /
